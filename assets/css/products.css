@@ -1,0 +1,270 @@
+.products {
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.products__img {
+    width: 100%;
+    margin: auto;
+}
+
+.products__contents {
+    color: var(--text-color);
+}
+
+.products__heading {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: justify;
+    color: var(--primary-color);
+}
+
+.products__code {
+    display: block;
+    font-size: 1.3rem;
+    margin: 12px 0;
+    font-weight: 300;
+}
+
+.products__price {
+    display: block;
+    font-size: 3rem;
+    margin: 30px 0;
+    font-weight: 500;
+    color: red;
+    margin-bottom: 40px;
+}
+
+.products__quantity{
+    display: flex;
+    flex-direction: column;
+}
+
+.products__quantity-label{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.products__quantity-input{
+    width: 60px;
+    height: 20px;
+    font-size: 1.3rem;
+    padding: 10px 0 10px 5px;
+    margin: 0 0 30px 0;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+/* .products__quantity-input::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(16, 110, 192);
+    z-index: 1;
+    
+    top: 0;
+
+} */
+
+.products__btn .btn {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.products__endow {}
+
+.products__endow-heading {
+    font-size: 1.6rem;
+    margin: 10px 0 20px 0;
+    color: var(--primary-color);
+}
+
+.products__endow-text {
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.describe {
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.describe__heading {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 12px 10px;
+    font-weight: 400;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    /* text-align: center; */
+    box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.describe__content {}
+
+.describe__content-text {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-top: 15px;
+    text-align: justify;
+}
+.comment{
+    color: var(--text-color);
+}
+
+.comment_head {
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.comment__heading {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 12px 10px;
+    font-weight: 400;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    /* text-align: center; */
+    box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 20%);
+    margin: 0;
+}
+
+.comment__contents {
+    /* height: 200px; */
+}
+
+.comment__contents table {
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.comment__contents table th{
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+.comment__contents table th:nth-child(1){
+    width: 20%;
+}
+.comment__contents table th:nth-child(2){
+    width: 60%;
+}
+.comment__contents table th:nth-child(3){
+    width: 20%;
+}
+
+.comment__contents table td:nth-child(1){
+   color: red;
+   font-weight: 500;
+}
+.comment__contents table td:nth-child(2){
+    font-size: 1.2rem;
+}
+.comment__contents table td:nth-child(3){
+    color: gray;
+    font-style: italic;
+}
+.comment__contents table td{
+    font-size: 1.4rem;
+    padding: 10px 0;
+
+}
+
+.comment__form {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: aliceblue;
+}
+.comment__form-heading{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: auto;
+    color: red;
+}
+
+.comment__input {
+    flex: 1;
+    border: none;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 6px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.comment__btn {
+    box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 20%);
+}
+a.btn_link{
+    display: unset;
+}
+.btn_link-a{
+    color: var(--white-color);
+}
+
+/* page
+
+<div class="row">
+    <div class="col l-12">
+        <div class="page">
+            <?php
+            if (isset($_GET['id'])) {
+            $sql_page = "SELECT * FROM products WHERE category = $id_category" ;
+            }else{
+            $sql_page = "SELECT * FROM products";
+            }
+            $query_page = mysqli_query($conn,$sql_page);
+            $row_page = mysqli_num_rows($query_page);
+            echo $page =ceil($row_page/8);
+            ?>
+            <ul class="page_list">
+                <?php for($i=1;$i<=$page;$i++){ ?>
+                <li class="page_item">
+                    <a class="page_link" href="#"><?php echo $i; ?></a>
+                </li>
+                <?php }?>
+            </ul>
+        </div>
+    </div>
+</div>
+*/
+
+.page{
+    display: block;
+}
+
+.page_list{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+.page_item{
+    list-style: none;
+    margin: 0 10px 10px 10px;
+}
+.page_link{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}

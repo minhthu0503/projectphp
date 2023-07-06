@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <!-- nav_pc -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/qrcode.jpg" alt="" class="header__qr-img">
+                                <div class="header__qr-app">
+                                    <a href="" class="header__qr-link">
+                                        <img style="  width: 70px;" src="./assets/img/ggplay.png" alt=""
+                                            class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/appstore.png" alt="" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a class="header__navbar-icon-link" href="">
+                                <ion-icon class="header__navbar-icon" name="logo-facebook"></ion-icon>
+                            </a>
+                            <a class="header__navbar-icon-link" href="">
+                                <ion-icon class="header__navbar-icon" name="logo-instagram"></ion-icon>
+                            </a>
+
+
+                        </li>
+                    </ul>
+
+                    <div class="header__navbar-marquee">
+                        <marquee id="mq1" direction="left" scrollamount="5" onmouseover="this.stop();"
+                            onmouseout="this.start();">
+                            <span class="header__navbar-marquee-content">Manga Shop - Kho truyện khổng lồ - Nơi bán
+                                truyện uy tín hàng đầu Việt Nam - Liên hệ: 0999888999</span>
+                        </marquee>
+                    </div>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="">
+                                Thông báo <ion-icon class="header__navbar-icon" name="notifications-outline"></ion-icon>
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/mp1.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham chinh hang</span>
+                                                <span class="header__notify-describe">Mo ta my pham chinh hang</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/mp1.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham chinh hang</span>
+                                                <span class="header__notify-describe">Mo ta my pham chinh hang</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/mp1.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham chinh hangMy pham chinh hangMy
+                                                    pham chinh hangMy pham chinh hang</span>
+                                                <span class="header__notify-describe"> Mo ta my pham chinh hangMo ta my
+                                                    pham chinh hangMo ta my pham chinh hangMo ta my pham chinh
+                                                    hang</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/mp1.jfif" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham chinh hang</span>
+                                                <span class="header__notify-describe">Mo ta my pham chinh hang</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__notify-footer">
+                                    <a href="#" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="">
+                                Trợ giúp <ion-icon class="header__navbar-icon" name="help-circle-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item-strong header__navbar-item--separate">Dang ky
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-strong">Dang nhap</li> -->
+                    </ul>
+
+                </nav>
+                <div class="header-with-search">
+                    <!-- nav_mobile -->
+
+
+                    <input hidden type="checkbox" name="" id="nav__mobile-input">
+
+                    <div class="nav-menu-search">
+                        <label for="nav__mobile-input" class="nav__mobile-btn">
+                            <img src="./assets/img/menu_icon.png" alt="" class="nav__mobile-img">
+                        </label>
+
+                        <label for="mobile__search" class="nav__mobile-search">
+                            <img src="./assets/img/search__icon.png" alt="" class="nav__mobile-search-img">
+                        </label>
+                    </div>
+
+
+                    <label for="nav__mobile-input" class="nav__overlay"></label>
+
+                    <label for="nav__mobile-input" class="nav__mobile">
+                        <img src="./assets/img/close_icon.png" alt="" class="nav__mobile-close">
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#" class="nav__mobile-link">Trang chủ</a>
+                            </li>
+                        </ul>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#" class="nav__mobile-link">Trang chủ</a>
+                            </li>
+                        </ul>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#" class="nav__mobile-link">Trang chủ</a>
+                            </li>
+                        </ul>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#" class="nav__mobile-link">Trang chủ</a>
+                            </li>
+                        </ul>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#" class="nav__mobile-link">Trang chủ</a>
+                            </li>
+                        </ul>
+                    </label>
+
+                    <!-- end nav__mobile -->
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-link">
+                            <img src="./assets/img/manga-logo.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <!-- CHECK INPUT SEARCH -->
+                    <input type="checkbox" name="" hidden id="mobile__search">
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input placeholder="Tìm kiếm..." type="text" class="header__search-input">
+                            <div class="header__search-list">
+                                <h3 class="header__search-list-heading">
+                                    Danh sách tìm kiếm
+                                </h3>
+                                <ul class="header__search-list-product">
+                                    <li class="header__search-list-product-item">
+                                        <a href="">Doraemon</a>
+                                    </li>
+                                    <li class="header__search-list-product-item">
+                                        <a href="">Oner piece</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                    </div>
+
+                    <div class="header__card">
+                        <div class="header__card-wrap">
+
+                            <a href="#" class="header__card-link">
+                                <span class="header__card-notice">
+                                    3
+                                </span>
+                                <ion-icon class="header__card-icon" name="cart"></ion-icon>
+                            </a>
+                            <!-- no-card -->
+                            <!-- <div class="header__card-list header__card-list-no-card">
+                                <img class="header__card-list-no-card-img"  src="./assets/img/cart-empty.png" alt="">
+                                <span class="header__card-list-no-card-msg">Chưa có sản phẩm</span>
+                            </div> -->
+                            <!-- <div class="header__card-list l-0 m-0 c-0">
+                                <h4 class="header__card-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__card-list-item">
+                                    <li class="header__card-item">
+                                        <img src="./assets/img/mp1.jfif" alt="" class="header__card-img">
+                                        <div class="header__card-item-info">
+                                            <div class="header__card-item-head">
+                                                <h5 class="header__card-item-name">Doraemon</h5>
+                                                <div class="header__card-item-price-wrap">
+                                                    <span class="header__card-item-price">15.000vnd</span>
+                                                    <span class="header__card-item-x">x</span>
+                                                    <span class="header__card-item-quantity">2</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__card-item-body">
+                                                <span class="header__card-item-description">Phân loại truyện:
+                                                    Doraemon</span>
+                                                <span class="header__card-item-delete">Xóa</span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__card-item">
+                                        <img src="./assets/img/mp1.jfif" alt="" class="header__card-img">
+                                        <div class="header__card-item-info">
+                                            <div class="header__card-item-head">
+                                                <h5 class="header__card-item-name">Doraemon</h5>
+                                                <div class="header__card-item-price-wrap">
+                                                    <span class="header__card-item-price">15.000vnd</span>
+                                                    <span class="header__card-item-x">x</span>
+                                                    <span class="header__card-item-quantity">2</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__card-item-body">
+                                                <span class="header__card-item-description">Phân loại truyện:
+                                                    Doraemon</span>
+                                                <span class="header__card-item-delete">Xóa</span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__card-item">
+                                        <img src="./assets/img/mp1.jfif" alt="" class="header__card-img">
+                                        <div class="header__card-item-info">
+                                            <div class="header__card-item-head">
+                                                <h5 class="header__card-item-name">Doraemon</h5>
+                                                <div class="header__card-item-price-wrap">
+                                                    <span class="header__card-item-price">15.000vnd</span>
+                                                    <span class="header__card-item-x">x</span>
+                                                    <span class="header__card-item-quantity">2</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__card-item-body">
+                                                <span class="header__card-item-description">Phân loại truyện:
+                                                    Doraemon</span>
+                                                <span class="header__card-item-delete">Xóa</span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="header__card-btn">
+                                    <a href="#" class="btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+
+                            </div> -->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-8 m-12 c-12">
+                        <div class="products">
+                            <div class="row">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="row">
+                                        <div class="col l-6 m-6 c-12">
+                                            <img src="./assets/img/Doraemon1.jpg" alt="" class="products__img">
+                                        </div>
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="products__contents">
+                                                <h1 class="products__heading">
+                                                    DORAEMON MOVIE STORY: TÂN NOBITA VÀ CHUYẾN PHIÊU LƯU VÀO XỨ QUỶ - 7
+                                                    DŨNG SĨ PHÉP THUẬT
+                                                </h1>
+                                                <span class="products__code">
+                                                    Mã sản phẩm: 8935244878233
+                                                </span>
+                                                <p class="products__price">
+                                                    30,000₫
+                                                </p>
+                                                <div class="products__quantity">
+                                                    <label class="products__quantity-label" for="">Số lượng:</label>
+                                                    <input class="products__quantity-input" type="number"
+                                                        placeholder="0" name="" id="">
+                                                </div>
+                                                <div class="products__btn">
+                                                    <button class="btn btn--primary">MUA NGAY</button>
+                                                    <button class="btn btn--primary">THÊM VÀO GIỎ</button>
+                                                </div>
+                                                <div class="products__endow">
+                                                    <h3 class="products__endow-heading">
+                                                        Ưu đãi dành riêng cho khách hàng đặt trước Online:
+                                                    </h3>
+                                                    <span class="products__endow-text">
+                                                        <ion-icon name="checkmark-outline"></ion-icon> Có thể nhận hàng
+                                                        tại shop.
+                                                    </span>
+                                                    <span class="products__endow-text">
+                                                        <ion-icon name="checkmark-outline"></ion-icon> Giao hàng toàn
+                                                        quốc. Thời gian giao hàng từ 3 - 7 ngày
+                                                    </span>
+                                                    <span class="products__endow-text">
+                                                        <ion-icon name="checkmark-outline"></ion-icon> Bọc plastic miễn
+                                                        phí cho Light Novel đặt mua trước ngày phát hành dự kiến.
+                                                    </span>
+                                                    <span class="products__endow-text">
+                                                        <ion-icon name="checkmark-outline"></ion-icon> Tặng bao bảo vệ
+                                                        cho mọi sản phẩm.
+                                                    </span>
+                                                    <span class="products__endow-text">
+                                                        <ion-icon name="checkmark-outline"></ion-icon> Đổi trả trong 30
+                                                        ngày.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12">
+                                            <div class="describe">
+                                                <h2 class="describe__heading">
+                                                    MÔ TẢ CHI TIẾT
+                                                </h2>
+                                                <div class="describe__content">
+                                                    <p class="describe__content-text">
+                                                        Doraemon (ドラえもん (銅鑼右衛門[2]) (Đồng La Hữu Vệ Môn)? tên cũ tại
+                                                        Việt Nam là Đôrêmon) là nhân vật chính hư cấu trong loạt
+                                                        Manga cùng tên của họa sĩ Fujiko F. Fujio. Trong truyện lấy
+                                                        bối cảnh ở thế kỷ 22, Doraemon là chú mèo robot của tương
+                                                        lai do xưởng Matsushiba — công xưởng chuyên sản xuất robot
+                                                        vốn dĩ nhằm mục đích chăm sóc trẻ nhỏ.
+
+                                                        Theo như lời kể của họa sĩ Fujiko, trong một đêm ông đang
+                                                        tìm kiếm đề tài và nhân vật cho một bộ truyện tranh tâm đắc
+                                                        thì một con mèo hoang nhảy vào nhà, nó kêu vài tiếng rồi
+                                                        nhảy vào lòng ông mà ngủ. Do quá mệt mỏi Fujiko cũng thiếp
+                                                        đi lúc nào không biết. Sáng hôm sau thức dậy, ông vội vàng
+                                                        bước xuống cầu thang và vấp phải con lật đật của cô con gái,
+                                                        từ đó sinh ra sự kết hợp giữa lật đật và mèo và ra đời nhân
+                                                        vật Doraemon. Ngoài nước da màu xanh không có tai, bàn tay
+                                                        tròn vo thì Fujiko còn đính kèm một cái chuông vàng ở cổ với
+                                                        dãy ruy băng màu đỏ đậm. Bộ manga ba lần được chuyển thể
+                                                        thành anime với nhiều người đã lồng tiếng cho nhân vật. Ở
+                                                        phiên bản chuyển thể năm 1973 do Tomita Kōsei lồng tiếng từ
+                                                        tập 1 đến tập 13 còn từ tập 14 trở đi là Nozawa Masako. Ở
+                                                        phiên bản 1979 đến tháng 3 năm 2005 là Ōyama Nobuyo. Từ
+                                                        tháng 4 năm 2005 đến nay, Doraemon do Mizuta Wasabi lồng
+                                                        tiếng.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12">
+                                            <div class="comment">
+                                                <div class="comment_head">
+                                                    <h1 class="comment__heading">
+                                                        Bình luận
+                                                    </h1>
+                                                    <div class="comment__contents">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Tên</th>
+                                                                    <th>Nội dung</th>
+                                                                    <th>Thời gian</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Trường Sơn</td>
+                                                                    <td>Truyện hay quá, giá thành rất rẻ, đáng mua</td>
+                                                                    <td>25/09/2022</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Trường Sơn</td>
+                                                                    <td>Truyện hay quá, giá thành rất rẻ, đáng mua</td>
+                                                                    <td>25/09/2022</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Trường Sơn</td>
+                                                                    <td>Truyện hay quá, giá thành rất rẻ, đáng mua</td>
+                                                                    <td>25/09/2022</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Trường Sơn</td>
+                                                                    <td>Truyện hay quá, giá thành rất rẻ, đáng mua</td>
+                                                                    <td>25/09/2022</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Trường Sơn</td>
+                                                                    <td>Truyện hay quá, giá thành rất rẻ, đáng mua</td>
+                                                                    <td>25/09/2022</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Trường Sơn</td>
+                                                                    <td>Truyện hay quá, giá thành rất rẻ, đáng mua</td>
+                                                                    <td>25/09/2022</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <form class="comment__form">
+                                                    <input placeholder="Viết bình luận..." type="text"
+                                                        class="comment__input">
+                                                    <button class="comment__btn btn btn--primary">Gửi bình luận</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12">
+                                            <div class="slick">
+                                                <h1 class="product-heading">Sản phẩm Tương tự</h1>
+                                                <div class="slick__slider row">
+                                                    <div class="slick__item col l-3">
+                                                        <div class="slick__item-content" title="Doraemon Học Tập:Cách Giải Toán Nhanh">
+                                                            <img class="slick__item-img" class="" src="./assets/img/Doraemon1.jpg" alt="">
+                                                            <h2 class="slick__item-heading"><a class="slick__item-link" href="#"> Doraemon
+                                                                    Học Tập:Cách Giải Toán Nhanh</a>
+                                                            </h2>
+                                                            <p class="slick__item-author">Tác giả: Fujiko F Fujio Kanjiro Kobayashi Yukihiro
+                                                                Mitani</p>
+                                                            <span class="slick__item-price">12.000₫</span>
+                    
+                                                            <div class="slick__hover">
+                                                                <div class="slick__hover-content">
+                                                                    <h2 class="slick__hover-heading"><a class="slick__hover-link"
+                                                                            href="#">Doraemon Học Tập:Cách Giải Toán Nhanh (
+                                                                            Tái Bản 2019)</a></h2>
+                    
+                    
+                                                                </div>
+                                                                <div class="slick__hover-btn">
+                                                                    <button class="btn btn--primary">Mua</button>
+                                                                    <button class="btn btn--primary">Xem</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                    
+                                                    <div class="slick__item col l-3">
+                                                        <div class="slick__item-content" title="Doraemon Học Tập:Cách Giải Toán Nhanh">
+                                                            <img class="slick__item-img" class="" src="./assets/img/Doraemon1.jpg" alt="">
+                                                            <h2 class="slick__item-heading"><a class="slick__item-link" href="#">Doraemon
+                                                                    Học Tập:Cách Giải Toán Nhanh</a>
+                                                            </h2>
+                                                            <p class="slick__item-author">Tác giả: Fujiko F Fujio Kanjiro Kobayashi Yukihiro
+                                                                Mitani</p>
+                                                            <span class="slick__item-price">12.000₫</span>
+                    
+                                                            <div class="slick__hover">
+                                                                <div class="slick__hover-content">
+                                                                    <h2 class="slick__hover-heading">Doraemon Học Tập:Cách Giải Toán Nhanh (
+                                                                        Tái Bản 2019)</h2>
+                    
+                    
+                                                                </div>
+                                                                <div class="slick__hover-btn">
+                                                                    <button class="btn btn--primary">Mua</button>
+                                                                    <button class="btn btn--primary">Xem</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                    
+                                                    <div class="slick__item col l-3">
+                                                        <div class="slick__item-content" title="Doraemon Học Tập:Cách Giải Toán Nhanh">
+                                                            <img class="slick__item-img" class="" src="./assets/img/Doraemon1.jpg" alt="">
+                                                            <h2 class="slick__item-heading"><a class="slick__item-link" href="#">Doraemon
+                                                                    Học Tập:Cách Giải Toán Nhanh</a>
+                                                            </h2>
+                                                            <p class="slick__item-author">Tác giả: Fujiko F Fujio Kanjiro Kobayashi Yukihiro
+                                                                Mitani</p>
+                                                            <span class="slick__item-price">12.000₫</span>
+                    
+                                                            <div class="slick__hover">
+                                                                <div class="slick__hover-content">
+                                                                    <h2 class="slick__hover-heading">Doraemon Học Tập:Cách Giải Toán Nhanh (
+                                                                        Tái Bản 2019)</h2>
+                    
+                    
+                                                                </div>
+                                                                <div class="slick__hover-btn">
+                                                                    <button class="btn btn--primary">Mua</button>
+                                                                    <button class="btn btn--primary">Xem</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                    
+                                                    <div class="slick__item col l-3">
+                                                        <div class="slick__item-content" title="Doraemon Học Tập:Cách Giải Toán Nhanh">
+                                                            <img class="slick__item-img" class="" src="./assets/img/Doraemon1.jpg" alt="">
+                                                            <h2 class="slick__item-heading"><a class="slick__item-link" href="#">Doraemon
+                                                                    Học Tập:Cách Giải Toán Nhanh</a>
+                                                            </h2>
+                                                            <p class="slick__item-author">Tác giả: Fujiko F Fujio Kanjiro Kobayashi Yukihiro
+                                                                Mitani</p>
+                                                            <span class="slick__item-price">12.000₫</span>
+                    
+                                                            <div class="slick__hover">
+                                                                <div class="slick__hover-content">
+                                                                    <h2 class="slick__hover-heading">Doraemon Học Tập:Cách Giải Toán Nhanh (
+                                                                        Tái Bản 2019)</h2>
+                    
+                    
+                                                                </div>
+                                                                <div class="slick__hover-btn">
+                                                                    <button class="btn btn--primary">Mua</button>
+                                                                    <button class="btn btn--primary">Xem</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                    
+                                                    <div class="slick__item col l-3">
+                                                        <div class="slick__item-content" title="Doraemon Học Tập:Cách Giải Toán Nhanh">
+                                                            <img class="slick__item-img" class="" src="./assets/img/Doraemon1.jpg" alt="">
+                                                            <h2 class="slick__item-heading"><a class="slick__item-link" href="#">Doraemon
+                                                                    Học Tập:Cách Giải Toán Nhanh</a>
+                                                            </h2>
+                                                            <p class="slick__item-author">Tác giả: Fujiko F Fujio Kanjiro Kobayashi Yukihiro
+                                                                Mitani</p>
+                                                            <span class="slick__item-price">12.000₫</span>
+                    
+                                                            <div class="slick__hover">
+                                                                <div class="slick__hover-content">
+                                                                    <h2 class="slick__hover-heading">Doraemon Học Tập:Cách Giải Toán Nhanh (
+                                                                        Tái Bản 2019)</h2>
+                    
+                    
+                                                                </div>
+                                                                <div class="slick__hover-btn">
+                                                                    <button class="btn btn--primary">Mua</button>
+                                                                    <button class="btn btn--primary">Xem</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-0 c-0">
+                        <div class="user">
+                            <h1 class="user__heading">Đăng nhập</h1>
+                            <form action="" class="user__form">
+                                <div class="user__lable">
+                                    <label class="user__lable-name" for="">Tài khoản:</label>
+                                    <input placeholder="Tài khoản..." type="text" class="user__form-username">
+                                </div>
+                                <div class="user__lable">
+                                    <label class="user__lable-name" for="">Mật khẩu:</label>
+                                    <input placeholder="Mật khẩu..." type="password" class="user__form-password">
+                                </div>
+                                <button class="btn btn--primary user__form-btn">Đăng nhập</button>
+                            </form>
+                            <ul class="user__list">
+                                <li class="user__item">
+                                    <a href="" class="user__item-link">Đăng ký</a>
+                                </li>
+                                <li class="user__item">
+                                    <a href="" class="user__item-link">Quên mật khẩu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <ion-icon class="category__heading-icon" name="list-outline"></ion-icon>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link category-item__link-active">Doraemon</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Conan</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">One Piece</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <footer class="footer">
+                    <div class="grid wide">
+                        <div class="footer__boder row">
+                            <div class="col l-6 c-0 m-0">
+                                <div class="footer__mail">
+                                    <div class="footer__mail-content">
+                                        <div class="row footer__mail-head">
+                                            <div class="col l-3">
+                                                <img src="./assets/img/img-email.png" alt="" class="footer__mail-img">
+                                            </div>
+                                            <div class="col l-9">
+                                                <h3 class="footer__mail-heading">Đăng ký nhận bản tin Cộng đồng shop
+                                                    <span class="footer__mail-text">Đừng bỏ lỡ hàng ngàn sản phẩm và
+                                                        chương trình siêu
+                                                        hấp dẫn</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__form col l-6 m-0 c-0">
+                                <form action="" class="footer__form-mail">
+                                    <div class="row">
+                                        <div class="col l-9">
+                                            <input placeholder="Nhập email..." type="text" class="footer__form-input">
+                                        </div>
+                                        <div class="col l-3">
+                                            <button class="footer__form-btn btn btn--primary">Gửi đi</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer__contact">
+                                    <div class="footer__contact-heading">
+                                        HỖ TRỢ KHÁCH HÀNG
+                                    </div>
+                                    <div class="footer__contact-content">
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link footer__contact-link--red">Hotline
+                                                đặt hàng: 0942 180 667.</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">(Hỗ trợ 7:00 am - 21:00 pm)</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link footer__contact-link--red">Hotline
+                                                hỗ trợ: 0397 955 489.</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">(Hỗ trợ 7:00 am - 17:00 pm)</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Các câu hỏi thường gặp</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Hướng dẫn mua hàng</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link"> Gửi yêu cầu hỗ trợ</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Phương thức vận chuyển</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Chính sách đổi trả hàng</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer__contact">
+                                    <div class="footer__contact-heading">
+                                        VỀ CỘNG ĐỒNG SHOP
+                                    </div>
+                                    <div class="footer__contact-content">
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Giới thiệu</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Chính sách bảo mật thông tin</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Hội truyện tranh full bộ</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Mô hình thuyền gỗ</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Sức Khỏe Và Làm Đẹp</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer__contact">
+                                    <div class="footer__contact-heading">
+                                        HỢP TÁC VÀ LIÊN KẾT
+                                    </div>
+                                    <div class="footer__contact-content">
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Chính sách cho đối tác</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Cách thức hoạt động TMĐT</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">ĐƠN VỊ THIẾT KẾ WEBSITE</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer__contact">
+                                    <div class="footer__contact-heading">
+                                        GIẤY PHÉP KINH DOANH
+                                    </div>
+                                    <div class="footer__contact-content">
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Bản quyền thuộc cộng đồng shop</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Chịu trách nghiệm: công ty cổ phần
+                                                Young Plus</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Giấy chứng nhận: 0315403436</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">Do Sở Kế hoạch và Đầu tư Thành phố
+                                                Hồ Chí Minh cấp ngày 22/11/2018</a>
+                                        </p>
+                                        <p class="footer__contact-item">
+                                            <a href="#" class="footer__contact-link">KẾT NỐI VỚI CHÚNG TÔI</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <button id="myBtn" title="Lên đầu trang"><img src='./assets/img/top_arrow.png' title='lên đầu trang'
+        width='50px' /></button>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./assets/js/slick.js"></script>
+<script src="./assets/js/arrow.js"></script>
+</body>
